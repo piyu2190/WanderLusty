@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to France</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text for readability */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0055a4; /* Blue header */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px; /* Center content */
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #ffffff; /* White background for sections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0055a4; /* Blue headings */
+            border-bottom: 2px solid #0055a4; /* Underline for headings */
+            padding-bottom: 10px;
+        }
+
+        .activity-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+            justify-content: space-between; /* Space between items */
+        }
+
+        .activity {
+            flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis */
+            margin: 10px; /* Space around each activity */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden; /* Prevent overflow */
+            background-color: #fff; /* White background for activity cards */
+            transition: transform 0.2s; /* Smooth scale effect on hover */
+        }
+
+        .activity:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        .activity img {
+            width: 100%; /* Responsive images */
+            border-radius: 5px 5px 0 0; /* Rounded top corners */
+        }
+
+        .activity p {
+            background-color: #e0f7fa; /* Light cyan background for text */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .price-breakdown {
+            margin-top: 20px;
+            background-color: #f9f9f9; /* Light background for price breakdown */
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #0055a4; /* Blue footer */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px; /* Space above footer */
+        }
+
+        @media (max-width: 768px) {
+            .activity {
+                flex: 1 1 100%; /* Stack activities on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to France!</h1>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About France</h2>
+        <p>
+            France is renowned for its rich history, art, and culture. From the romantic streets of Paris to the stunning landscapes of Provence, 
+            every region offers a unique experience that captures the heart of travelers.
+        </p>
+    </section>
+
+    <section id="activities">
+        <h2>Activities and Famous Places</h2>
+        <div class="activity-container">
+            <div class="activity">
+                <h3>Relax in the Gardens of Versailles</h3>
+                <img src="of vrs.jpg" alt="Gardens of Versailles">
+                <p>Explore the stunning gardens of the Palace of Versailles, a UNESCO World Heritage site.</p>
+            </div>
+            <div class="activity">
+                <h3>Explore the Louvre Museum</h3>
+                <img src="Secrets of Louvre 1.webp" alt="The Louvre Museum in Paris">
+                <p>Discover world-famous art pieces, including the Mona Lisa at the Louvre Museum.</p>
+            </div>
+            <div class="activity">
+                <h3>Stroll through Montmartre</h3>
+                <img src="montemt.jpg" alt="Charming streets of Montmartre">
+                <p>Wander through the charming streets of Montmartre and enjoy its artistic vibe.</p>
+            </div>
+            <div class="activity">
+                <h3>Visit the Eiffel Tower</h3>
+                <img src="beautiful_eiffel_tower_wallpaper_by_thepwn3r_d8ii4bf-fullview.jpg" alt="The iconic Eiffel Tower in Paris">
+                <p>Experience the breathtaking views from the top of the iconic Eiffel Tower.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-breakdown">
+        <h2>Trip Cost Breakdown for 7 Days from India</h2>
+        <ul>
+            <li><strong>Flight Costs:</strong> The cost for a round-trip flight from India to France varies, often ranging from approximately ₹40,000 to ₹60,000, depending on factors such as the airline, the season, and the booking time.</li>
+            <li><strong>Accommodation:</strong> 
+                <ul>
+                    <li><strong>Hostels:</strong> Hostels provide affordable options for budget travelers, generally costing around 30-60 EUR per night (roughly 2,700 to 5,400 INR).</li>
+                    <li><strong>Airbnb:</strong> Budget-friendly options start at 50-120 EUR per night (4,500 to 10,800 INR) for a room or small apartment.</li>
+                    <li><strong>Hotels:</strong> Mid-range hotels in popular cities like Paris or Nice generally cost between 100-250 EUR per night (9,000 to 22,500 INR).</li>
+                </ul>
+            </li>
+            <li><strong>Food:</strong> Daily food budget: Most travelers spend about €40 per day on food. This covers a mix of meals, often with breakfast being the least expensive and dinner the most.
+                <ul>
+                    <li><strong>Typical Meal Costs:</strong>
+                        <ul>
+                            <li>Breakfast: Roughly €8, with options like croissants and coffee.</li>
+                            <li>Lunch: Around €15 for casual or quick meals.</li>
+                            <li>Dinner: Approximately €25 if dining in a modest restaurant.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Activities:</strong> 
+                <ul>
+                    <li><strong>Eiffel Tower Ticket:</strong> A ticket to the summit costs about €25, which is approximately ₹2,250.</li>
+                    <li><strong>Louvre Museum:</strong> Entrance fees are around €17, or ₹1,530.</li>
+                    <li><strong>Versailles Gardens:</strong> Entry to the gardens is free, but guided tours may cost around €20-30, which is ₹1,800 to ₹2,700.</li>
+                </ul>
+            </li>
+            <li><strong>Transportation:</strong> For a 7-day transportation plan in France, a Paris Visite pass costs about €65 (around ₹5,800) for unlimited travel on public transport within Paris.</li>
+            <li><strong>Total Estimated Cost:</strong> 
+                <ul>
+                    <li>Budget Trip (Hostel, Basic Activities): ₹1,20,000 - ₹1,70,000</li>
+                    <li>Mid-range Trip (Airbnb/Hotel, Multiple Activities): ₹2,00,000 - ₹2,80,000</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 WanderLusty Travel Guide. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

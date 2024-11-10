@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to England</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text for readability */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003399; /* Blue header */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px; /* Center content */
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #ffffff; /* White background for sections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #003399; /* Blue headings */
+            border-bottom: 2px solid #003399; /* Underline for headings */
+            padding-bottom: 10px;
+        }
+
+        .activity-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+            justify-content: space-between; /* Space between items */
+        }
+
+        .activity {
+            flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis */
+            margin: 10px; /* Space around each activity */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden; /* Prevent overflow */
+            background-color: #fff; /* White background for activity cards */
+        }
+
+        .activity img {
+            width: 100%; /* Responsive images */
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Cover the area while maintaining aspect ratio */
+            border-radius: 5px 5px 0 0; /* Rounded top corners */
+        }
+
+        .activity p {
+            background-color: #e0f7fa; /* Light cyan background for text */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .price-breakdown {
+            margin-top: 20px;
+            background-color: #f9f9f9; /* Light background for price breakdown */
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #003399; /* Blue footer */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px; /* Space above footer */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to England!</h1>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About England</h2>
+        <p>
+            England is a country rich in history and culture, known for its iconic landmarks, charming villages, and vibrant cities. 
+            From the bustling streets of London to the serene countryside, England offers a unique blend of tradition and modernity.
+        </p>
+    </section>
+
+    <section id="activities">
+        <h2>Activities and Famous Places</h2>
+        <div class="activity-container">
+            <div class="activity">
+                <h3>Visit the Tower of London</h3>
+                <img src="Tower of London.avif" alt="The Tower of London">
+                <p>Explore the historic Tower of London, home to the Crown Jewels and centuries of history.</p>
+            </div>
+            <div class="activity">
+                <h3>Stroll through Buckingham Palace</h3>
+                <img src="Buckingham-Palace-Queen-Victoria-Memorial-London-statue.webp" alt="Buckingham Palace">
+                <p>Witness the Changing of the Guard ceremony at the iconic Buckingham Palace.</p>
+            </div>
+            <div class="activity">
+                <h3>Explore Stonehenge</h3>
+                <img src="stonehenge_image_1-credit-andre-pattenden_english-heritage-2560x2560.jpeg" alt="Stonehenge">
+                <p>Visit the mysterious Stonehenge, one of the wonders of the prehistoric world.</p>
+            </div>
+            <div class="activity">
+                <h3>Discover the Lake District</h3>
+                <img src="Lake District.png" alt="Lake District">
+                <p>Enjoy the stunning landscapes of the Lake District, perfect for hiking and relaxation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-breakdown">
+        <h2>Trip Cost Breakdown for 7 Days from India</h2>
+        <ul>
+            <li><strong>Flight Costs:</strong> Round-trip flights from India to England typically range from ₹45,000 to ₹75,000, depending on the airline and season.</li>
+            <li><strong>Accommodation:</strong> 
+                <ul>
+                    <li><strong>Hostels:</strong> Budget hostels can cost around £20-£50 per night (approximately ₹2,000 to ₹5,000).</li>
+                    <li><strong>Airbnb:</strong> Affordable options start at £40-£100 per night (around ₹4,000 to ₹10,000).</li>
+                    <li><strong>Hotels:</strong> Mid-range hotels usually cost between £80-£200 per night (roughly ₹8,000 to ₹20,000).</li>
+                </ul>
+            </li>
+            <li><strong>Food:</strong> Daily food budget is about £30-£50, covering meals from casual dining to pub food.
+                <ul>
+                    <li><strong>Typical Meal Costs:</strong>
+                        <ul>
+                            <li>Breakfast: Around £7 for a full English breakfast.</li>
+                            <li>Lunch: Approximately £10-£15 for a casual meal.</li>
+                            <li>Dinner: About £20-£30 in a restaurant.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Activities:</strong> 
+                <ul>
+                    <li><strong>Tower of London Ticket:</strong> Entry costs around £30 (approximately ₹3,000).</li>
+                    <li><strong>Stonehenge Ticket:</strong> Admission is about £20 (around ₹2,000).</li>
+                    <li><strong>Lake District Activities:</strong> Various activities, including boat rentals, can cost around £15-£30.</li>
+                </ul>
+            </li>
+            <li><strong>Transportation:</strong> A rail pass for unlimited travel within England for 7 days costs about £150 (around ₹15,000).</li>
+            <li><strong>Total Estimated Cost:</strong> 
+                <ul>
+                    <li>Budget Trip (Hostel, Basic Activities): ₹1,40,000 - ₹1,90,000</li>
+                    <li>Mid-range Trip (Airbnb/Hotel, Multiple Activities): ₹2,10,000 - ₹3,00,000</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 WanderLusty Travel Guide. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

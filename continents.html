@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Journey</title>
+    <style>
+        /* Add any existing styles here */
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .continent {
+            margin: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+        img {
+            width: 300px; /* Set a fixed width for images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            cursor: pointer; /* Change cursor to pointer */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Your Travel Journey!</h1>
+    
+    <div id="continents">
+        <div class="continent" id="asia">
+            <h2>Asia</h2>
+            <a href="asia.html">
+                <img src="Asia_(orthographic_projection)_without_New_Guinea.svg.png" alt="Asia">
+            </a>
+        </div>
+        <div class="continent" id="europe">
+            <h2>Europe</h2>
+            <a href="europe.html">
+                <img src="Europe_orthographic_Caucasus_Urals_boundary_(with_borders).svg.png" alt="Europe">
+            </a>
+        </div>
+        <div class="continent" id="north-america">
+            <h2>North America</h2>
+            <a href="north-america.html">
+                <img src="Location_North_America.svg.png" alt="North America">
+            </a>
+        </div>
+        <div class="continent" id="africa">
+            <h2>Africa</h2>
+            <a href="africa.html">
+                <img src="Africa_(orthographic_projection).svg.png" alt="Africa">
+            </a>
+        </div>
+        <div class="continent" id="south-america">
+            <h2>South America</h2>
+            <a href="south-america.html">
+                <img src="South_America_(orthographic_projection).svg.png" alt="South America">
+            </a>
+        </div>
+        <div class="continent" id="oceania">
+            <h2>Oceania</h2>
+            <a href="oceania.html">
+                <img src="Oceania_(centered_orthographic_projection).svg" alt="Oceania">
+            </a>
+        </div>
+        <div class="continent" id="Antarctica">
+            <h2>Antarctica</h2>
+            <a href="antarctica.html">
+                <img src="Antarctica_(orthographic_projection).svg" alt="Antarctica">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Function to change background color based on continent selection
+        function changeBackgroundColor(continent) {
+            const colors = {
+                asia: '#ffcccb', // Light red
+                europe: '#add8e6', // Light blue
+                'north-america': '#90ee90', // Light green
+                africa: '#ffffe0', // Light yellow
+                'south-america': '#ffb6c1' // Light pink
+            };
+            document.body.style.backgroundColor = colors[continent];
+        }
+
+        // Add event listeners to each continent
+        document.querySelectorAll('.continent').forEach(continent => {
+            continent.addEventListener('click', function() {
+                const continentId = this.id;
+                changeBackgroundColor(continentId);
+            });
+        });
+    </script>
+</body>
+</html>

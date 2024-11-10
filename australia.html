@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Australia</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text for readability */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff; /* Blue header */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px; /* Center content */
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #ffffff; /* White background for sections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff; /* Blue headings */
+            border-bottom: 2px solid #007bff; /* Underline for headings */
+            padding-bottom: 10px;
+        }
+
+        .activity-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+            justify-content: space-between; /* Space between items */
+        }
+
+        .activity {
+            flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis */
+            margin: 10px; /* Space around each activity */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden; /* Prevent overflow */
+            background-color: #fff; /* White background for activity cards */
+        }
+
+        .activity img {
+            width: 100%; /* Responsive images */
+            border-radius: 5px 5px 0 0; /* Rounded top corners */
+        }
+
+        .activity p {
+            background-color: #e0f7fa; /* Light cyan background for text */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .price-breakdown {
+            margin-top: 20px;
+            background-color: #f9f9f9; /* Light background for price breakdown */
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #007bff; /* Blue footer */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px; /* Space above footer */
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to Australia!</h1>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Australia</h2>
+        <p>
+            Australia is known for its stunning landscapes, unique wildlife, and vibrant cities. 
+            From the Great Barrier Reef to the Outback, Australia offers a diverse range of experiences for every traveler.
+        </p>
+    </section>
+
+    <section id="activities">
+        <h2>Activities and Famous Places</h2>
+        <div class="activity-container">
+            <div class="activity">
+                <h3>Visit the Sydney Opera House</h3>
+                <img src="HD-wallpaper-sydney-musical-theatre-sydney-opera-house-harbour-bridge-sunset-evening-sydney-cityscape-landmark-oceania-australia.jpg" alt="Sydney Opera House">
+                <p>Explore the iconic Sydney Opera House and enjoy a performance.</p>
+            </div>
+            <div class="activity">
+                <h3>Great Barrier Reef</h3>
+                <img src="Snorkelling-84-lady-musgrave-experience-great-barrier-reef-1030x773.webp" alt="Great Barrier Reef">
+                <p>Snorkel or dive in the Great Barrier Reef, one of the natural wonders of the world.</p>
+            </div>
+            <div class="activity">
+                <h3>Explore the Outback</h3>
+                <img src="Explore the Outback.jpg" alt="The Australian Outback">
+                <p>Experience the rugged beauty of the Australian Outback and its unique wildlife.</p>
+            </div>
+            <div class="activity">
+                <h3>Visit Melbourne's Laneways</h3>
+                <img src="melbourne-australia-1244x700.jpg" alt="Melbourne's famous laneways">
+                <p>Discover the vibrant street art and cafes in Melbourne's famous laneways.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-breakdown">
+        <h2>Trip Cost Breakdown for 7 Days from India</h2>
+        <ul>
+            <li><strong>Flight Costs:</strong> The cost for a round-trip flight from India to Australia typically ranges from approximately ₹40,000 to ₹70,000, depending on the airline, season, and booking time.</li>
+            <li><strong>Accommodation:</strong>
+                <ul>
+                    <li><strong>Hostels:</strong> Budget hostels generally cost around 1,000-2,500 AUD per night (roughly 20,000 to 50,000 INR).</li>
+                    <li><strong>Airbnb:</strong> Affordable Airbnb options start at around 2,500-5,000 AUD per night (50,000 to 1,00,000 INR).</li>
+                    <li><strong>Hotels:</strong> Mid-range hotels in popular cities like Sydney or Melbourne typically cost between 5,000-10,000 AUD per night (1,00,000 to 2,00,000 INR).</li>
+                </ul>
+            </li>
+            <li><strong>Food:</strong> Most travelers spend about 1,500 AUD per day on food, covering a mix of meals.
+                <ul>
+                    <li>Breakfast: Roughly 200 AUD.</li>
+                    <li>Lunch: Around 300 AUD.</li>
+                    <li>Dinner: Approximately 1,000 AUD.</li>
+                </ul>
+            </li>
+            <li><strong>Activities:</strong>
+                <ul>
+                    <li>Sydney Opera House Tour: Approximately 40 AUD.</li>
+                    <li>Great Barrier Reef Snorkeling: Costs around 200-400 AUD.</li>
+                    <li>Outback Tours: Typically around 150-300 AUD.</li>
+                    <li>Melbourne Laneways Tour: Costs about 50-100 AUD.</li>
+                </ul>
+            </li>
+            <li><strong>Transportation:</strong> Local transportation costs vary, but a 7-day public transport pass in Sydney is about 60 AUD.</li>
+            <li><strong>Total Estimated Cost:</strong> 
+                <ul>
+                    <li>Budget Trip (Hostel, Basic Activities): ₹1,00,000 - ₹1,50,000</li>
+                    <li>Mid-range Trip (Airbnb/Hotel, Multiple Activities): ₹1,80,000 - ₹2,50,000</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 WanderLusty Travel Guide. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

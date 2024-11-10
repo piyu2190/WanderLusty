@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to America</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text for readability */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c8102e; /* Red header */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px; /* Center content */
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #ffffff; /* White background for sections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #c8102e; /* Red headings */
+            border-bottom: 2px solid #c8102e; /* Underline for headings */
+            padding-bottom: 10px;
+        }
+
+        .activity-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+            justify-content: space-between; /* Space between items */
+        }
+
+        .activity {
+            flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis */
+            margin: 10px; /* Space around each activity */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden; /* Prevent overflow */
+            background-color: #fff; /* White background for activity cards */
+        }
+
+        .activity img {
+            width: 100%; /* Responsive images */
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Cover the area while maintaining aspect ratio */
+            border-radius: 5px 5px 0 0; /* Rounded top corners */
+        }
+
+        .activity p {
+            background-color: #e0f7fa; /* Light cyan background for text */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .price-breakdown {
+            margin-top: 20px;
+            background-color: #f9f9f9; /* Light background for price breakdown */
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #c8102e; /* Red footer */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px; /* Space above footer */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to America!</h1>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About America</h2>
+        <p>
+            America is a vast country known for its diverse landscapes, rich culture, and iconic landmarks. 
+            From the bustling streets of New York City to the stunning national parks, America offers a unique experience for every traveler.
+        </p>
+    </section>
+
+    <section id="activities">
+        <h2>Activities and Famous Places</h2>
+        <div class="activity-container">
+            <div class="activity">
+                <h3>Visit the Statue of Liberty</h3>
+                <img src="istockphoto-1454217037-612x612.jpg" alt="Statue of Liberty">
+                <p>Explore the iconic Statue of Liberty and learn about its history.</p>
+            </div>
+            <div class="activity">
+                <h3>Stroll through Central Park</h3>
+                <img src="Central Park.webp" alt="Central Park">
+                <p>Relax in Central Park, a green oasis in the heart of New York City.</p>
+            </div>
+            <div class="activity">
+                <h3>Explore the Grand Canyon</h3>
+                <img src="Grand Canyon.webp" alt="Grand Canyon">
+                <p>Experience breathtaking views at the Grand Canyon, one of the natural wonders of the world.</p>
+            </div>
+            <div class="activity">
+                <h3>Visit Yellowstone National Park</h3>
+                <img src="Yellowstone National Park.jpg" alt="Yellowstone National Park">
+                <p>Discover the geothermal wonders and diverse wildlife of Yellowstone National Park.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-breakdown">
+        <h2>Trip Cost Breakdown for 7 Days from India</h2>
+        <ul>
+            <li><strong>Flight Costs:</strong> Round-trip flights from India to America typically range from ₹50,000 to ₹90,000, depending on the airline and season.</li>
+            <li><strong>Accommodation:</strong> 
+                <ul>
+                    <li><strong>Hostels:</strong> Budget hostels can cost around $30-$70 per night (approximately ₹2,500 to ₹5,500).</li>
+                    <li><strong>Airbnb:</strong> Affordable options start at $50-$150 per night (around ₹4,000 to ₹12,000).</li>
+                    <li><strong>Hotels:</strong> Mid-range hotels usually cost between $100-$250 per night (roughly ₹8,000 to ₹20,000).</li>
+                </ul>
+            </li>
+            <li><strong>Food:</strong> Daily food budget is about $40-$70, covering meals from casual dining to fine dining.
+                <ul>
+                    <li><strong>Typical Meal Costs:</strong>
+                        <ul>
+                            <li>Breakfast: Around $10 for a typical American breakfast.</li>
+                            <li>Lunch: Approximately $15-$25 for a casual meal.</li>
+                            <li>Dinner: About $25-$50 in a restaurant.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Activities:</strong> 
+                <ul>
+                    <li><strong>Statue of Liberty Ticket:</strong> Entry costs around $25 (approximately ₹2,000).</li>
+                    <li><strong>Grand Canyon Tour:</strong> Guided tours can range from $50 to $150 (around ₹4,000 to ₹12,000).</li>
+                    <li><strong>Yellowstone National Park Entry:</strong> Admission is about $35 (around ₹3,000).</li>
+                </ul>
+            </li>
+            <li><strong>Transportation:</strong> A rail pass for unlimited travel within certain regions can cost about $150 (around ₹12,000).</li>
+            <li><strong>Total Estimated Cost:</strong> 
+                <ul>
+                    <li>Budget Trip (Hostel, Basic Activities): ₹1,50,000 - ₹2,00,000</li>
+                    <li>Mid-range Trip (Airbnb/Hotel, Multiple Activities): ₹2,50,000 - ₹3,50,000</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 WanderLusty Travel Guide. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

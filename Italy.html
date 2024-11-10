@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Italy</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text for readability */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #008C45; /* Green header */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px; /* Center content */
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #ffffff; /* White background for sections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #008C45; /* Green headings */
+            border-bottom: 2px solid #008C45; /* Underline for headings */
+            padding-bottom: 10px;
+        }
+
+        .activity-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+            justify-content: space-between; /* Space between items */
+        }
+
+        .activity {
+            flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis */
+            margin: 10px; /* Space around each activity */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden; /* Prevent overflow */
+            background-color: #fff; /* White background for activity cards */
+        }
+
+        .activity img {
+            width: 100%; /* Responsive images */
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Cover the area while maintaining aspect ratio */
+            border-radius: 5px 5px 0 0; /* Rounded top corners */
+        }
+
+        .activity p {
+            background-color: #e0f7fa; /* Light cyan background for text */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .price-breakdown {
+            margin-top: 20px;
+            background-color: #f9f9f9; /* Light background for price breakdown */
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #008C45; /* Green footer */
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px; /* Space above footer */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Italy!</h1>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Italy</h2>
+        <p>
+            Italy is famous for its art, history, and cuisine. From the ancient ruins of Rome to the romantic canals of Venice, 
+            each region offers a rich tapestry of experiences that delight travelers from around the world.
+        </p>
+    </section>
+
+    <section id="activities">
+        <h2>Activities and Famous Places</h2>
+        <div class="activity-container">
+            <div class="activity">
+                <h3>Visit the Colosseum</h3>
+                <img src="colo it.webp" alt="The iconic Colosseum in Rome">
+                <p>Explore the ancient ruins of the Colosseum, a symbol of Rome's architectural prowess.</p>
+            </div>
+            <div class="activity">
+                <h3>Stroll through Venice</h3>
+                <img src="Grand-Canal-Venice.webp" alt="Canals of Venice">
+                <p>Experience the enchanting canals of Venice on a traditional gondola ride.</p>
+            </div>
+            <div class="activity">
+                <h3>Discover the Leaning Tower of Pisa</h3>
+                <img src="Leaning-Tower-of-Pisa.webp" alt="The Leaning Tower of Pisa">
+                <p>Visit the famous Leaning Tower of Pisa and take memorable photos.</p>
+            </div>
+            <div class="activity">
+                <h3>Explore the Amalfi Coast</h3>
+                <img src="Amalfi Coast.jpg" alt="Scenic view of the Amalfi Coast">
+                <p>Relax along the stunning Amalfi Coast and enjoy breathtaking views.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-breakdown">
+        <h2>Trip Cost Breakdown for 7 Days from India</h2>
+        <ul>
+            <li><strong>Flight Costs:</strong> The cost for a round-trip flight from India to Italy varies, often ranging from approximately ₹40,000 to ₹70,000, depending on factors such as the airline, the season, and the booking time.</li>
+            <li><strong>Accommodation:</strong> 
+                <ul>
+                    <li><strong>Hostels:</strong> Hostels provide affordable options for budget travelers, generally costing around 30-60 EUR per night (roughly 2,700 to 5,400 INR).</li>
+                    <li><strong>Airbnb:</strong> Budget-friendly options start at 50-120 EUR per night (4,500 to 10,800 INR) for a room or small apartment.</li>
+                    <li><strong>Hotels:</strong> Mid-range hotels in popular cities like Rome or Florence generally cost between 100-250 EUR per night (9,000 to 22,500 INR).</li>
+                </ul>
+            </li>
+            <li><strong>Food:</strong> Daily food budget: Most travelers spend about €40 per day on food. This covers a mix of meals, often with breakfast being the least expensive and dinner the most.
+                <ul>
+                    <li><strong>Typical Meal Costs:</strong>
+                        <ul>
+                            <li>Breakfast: Roughly €8, with options like pastries and coffee.</li>
+                            <li>Lunch: Around €15 for casual or quick meals.</li>
+                            <li>Dinner: Approximately €25 if dining in a modest restaurant.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Activities:</strong> 
+                <ul>
+                    <li><strong>Colosseum Ticket:</strong> A ticket to the Colosseum costs about €18, which is approximately ₹1,620.</li>
+                    <li><strong>Gondola Ride in Venice:</strong> A gondola ride typically costs around €80 for 30 minutes, or ₹7,200.</li>
+                    <li><strong>Leaning Tower of Pisa:</strong> Entrance fees are around €18, or ₹1,620.</li>
+                </ul>
+            </li>
+            <li><strong>Transportation:</strong> For a 7-day transportation plan in Italy, a rail pass for unlimited travel between major cities costs about €150 (around ₹13,500).</li>
+            <li><strong>Total Estimated Cost:</strong> 
+                <ul>
+                    <li>Budget Trip (Hostel, Basic Activities): ₹1,30,000 - ₹1,80,000</li>
+                    <li>Mid-range Trip (Airbnb/Hotel, Multiple Activities): ₹2,00,000 - ₹2,80,000</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 WanderLusty Travel Guide. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
